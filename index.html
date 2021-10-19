@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 50%;
+            border-radius: 20px;
+        }
+        #data{
+            text-align: center;
+            margin: auto;
+            width: 40%;
+            background-color: rgb(240, 240, 240);
+        }
+        #signup>*{
+            margin-top: 5px;
+        }
+        #signup{
+            display: none;
+            background-color: antiquewhite;
+            width: 200px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #login>*{
+            margin-top: 5px;
+        }
+        #login{
+            display: none;
+            background-color: antiquewhite;
+            width: 200px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #message{
+            color:red;
+        }
+        #align{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="align"><div id="name"></div></div>
+    
+    <button onclick="signup()">Sign Up</button>
+    <button onclick="login()">Login</button>
+    <input type="text" id="movie">
+    <button onclick="searchMovie()">Search</button>
+    <div id="data">
+       
+    </div>
+    <form id="signup" onsubmit="getData(event)">
+        Name: <input type="text" id="name"> <br>
+        Email: <input type="email" id="email"><br>
+        Password: <input type="password" id="password"><br>
+        Username: <input type="text" id="user"><br>
+        Mobile: <input type="text" id="mobile"><br>
+        Description: <input type="text" id="description"><br>
+        <p id="message"></p>
+        <input type="submit">
+    </form>
+
+    <form id="login" onsubmit="check(event)">
+        Username: <input type="text" id="user"><br>
+        Password: <input type="password" id="password"><br>
+        
+      
+        <p id="message"></p>
+        <input type="submit">
+    </form>
+    
+
+</body>
+<script src="index.js"></script>
+</html>
